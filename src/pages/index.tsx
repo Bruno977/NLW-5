@@ -25,7 +25,7 @@ type HomeProps = {
 
 export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
   return (
-    <div className={styles.homePage}>
+    <div className={styles.homepage}>
       <section className={styles.latestEpisodes}>
         <h2>Ultimos Lançamentos</h2>
 
