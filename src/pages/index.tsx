@@ -33,7 +33,12 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
           {latestEpisodes.map (episode => {
             return (
               <li key={episode.id}>
-                <Image width={192} height={192} src={episode.thumbnail} alt={episode.title}/>
+                <Image width={192} 
+                height={192} 
+                src={episode.thumbnail} 
+                alt={episode.title}
+                objectFit="cover"
+                />
 
                 <div className={styles.episodeDetails}>
                   <a href="">{episode.title}</a>
