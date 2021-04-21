@@ -1,6 +1,19 @@
-import { Header } from "../components/Header";
+import {GetStaticProps} from 'next'
+import {format, parseISO} from 'date-fns'
+import prBR from 'date-fns/locale/pt-BR'
 
-export default function Home(props) {
+type Episode = {
+  id: string;
+  tittle: string;
+  members: string;
+  published_at: string;
+}
+
+type HomeProps = {
+  episodes: Episode[];
+}
+
+export default function Home(props: HomeProps) {
   return (
     <div>
       <h1>Index</h1>
